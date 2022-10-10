@@ -5,14 +5,12 @@
 918 -> 1 */
 Console.WriteLine("Hello, User! Введите трёхзначное число");
 int num = int.Parse(Console.ReadLine()!);
-if (num < 100)
-{
-    Console.WriteLine($"{num} - ЧИСЛО  НЕ ЯВЛЯЕТСЯ ТРЁХЗНАЧНЫМ!");
-}
+if (num < 100) Console.WriteLine($"{num} - ЧИСЛО  НЕ ЯВЛЯЕТСЯ ТРЁХЗНАЧНЫМ!");
+else if (num > 1000) Console.WriteLine($"{num} - ЧИСЛО  НЕ ЯВЛЯЕТСЯ ТРЁХЗНАЧНЫМ!!!!!");
 
 else
 {
     int num1 = num % 100; // убираем 1-ю цифру из числа//
     int num2 = num1 / 10; // убираем 3-ю цифру из числа//
-Console.WriteLine($"Вторая цифра числа: {num2}");
+    Console.WriteLine($"Вторая цифра числа: {num2}");
 }
